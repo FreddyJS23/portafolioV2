@@ -1,0 +1,27 @@
+---
+interface Props {
+  proyecto: string;
+  descripcion: string;
+  imagen:{alt:string,src:string}
+  tegnologias: { alt: string; src: string }[];
+}
+
+const { proyecto, descripcion,imagen, tegnologias } = Astro.props;
+---
+
+<div class="card w-96 bg-base-100 shadow-xl">
+  <figure>
+    <img src={imagen.src} alt={imagen.alt} />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">proyecto</h2>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <div class="card-actions justify-start">
+      {
+        tegnologias.map((tegnologia) => (
+          <img src={tegnologia.src} alt={tegnologia.alt} />
+        ))
+      }
+    </div>
+  </div>
+</div>
