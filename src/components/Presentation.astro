@@ -1,0 +1,33 @@
+---
+import {TypewriterComponent} from "./Typewriter";
+
+---
+
+<div class="flex flex-col relative shadow-xl p-8 gap-3">
+  <div class="self-end absolute  -right-16 -top-20">
+    <img src="../public/sentado.svg" alt="ilustracion" class="w-36 h-36 " />
+  </div>
+  <div class="flex flex-row items-end gap-1">
+    <h2 class="text-3xl font-bold font-PermanentMarker mr-2">Freddy Solarte</h2>
+    <img class="h-8" src="../public/linkedin.svg" alt="linkedin" />
+    <img class="h-8" src="../public/github.svg" alt="github" />
+    <img class="h-8" src="../public/whatsapp.svg" alt="whatsapp" />
+  </div>
+  <p class="font-bold text-lg">Full stack developer</p>
+  <div class="flex flex-col">
+    <p class="text-base">
+      “La tecnología, como el arte, es un ejercicio altísimo de la imaginación
+      humana” 
+    </p>
+    <cite class="self-end">Daniel Bell</cite>
+  </div>
+</div>
+
+<div class="flex flex-col">
+  <div class="relative">
+    <img src="../public/foto.jpeg" alt="foto" class="w-60 h-60 rounded-full z-10" />
+  </div>
+  <div class="absolute">
+     <TypewriterComponent client:only /> 
+  </div>
+</div>
