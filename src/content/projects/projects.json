@@ -1,0 +1,49 @@
+{
+  "proyectos": [
+    {
+      "proyecto": "Aplicación web para una escuela",
+      "imagen": {
+        "src": "../public/proyecto-escuela.jpeg",
+        "alt": "proyecto escuela"
+      },
+      "descripcion": "Permite control de registro de los estudiante, profesores y representantes y generación de constancias en pdf",
+      "tegnologias": [
+        { "alt": "HTML5", "src": "../public/html5.svg" },
+        { "alt": "CSS3", "src": "../public/css3.svg" },
+        { "alt": "Git", "src": "../public/git.svg" },
+        { "alt": "JavaScript", "src": "../public/javascript.svg" },
+        { "alt": "PHP", "src": "../public/php.svg" },
+        { "alt": "Mysql", "src": "../public/mysql.svg" }
+      ]
+    },
+    {
+      "proyecto": "Aplicación web para consultar películas y series",
+      "imagen": {
+        "src": "../public/proyecto-catalogo-peliculas.jpg",
+        "alt": "catalogo de peliculas"
+      },
+      "descripcion": "Filtra por genero o puede escribir su película o serie favorita",
+      "tegnologias": [
+        { "alt": "HTML5", "src": "../public/html5.svg" },
+        { "alt": "CSS3", "src": "../public/css3.svg" },
+        { "alt": "Git", "src": "../public/git.svg" },
+        { "alt": "NextJs", "src": "../public/nextjs.svg" },
+        { "alt": "Figma", "src": "../public/figma.svg" }
+      ]
+    },
+    {
+      "proyecto": "Aplicación web para administrar clientes en una red Wifi",
+      "imagen": { "src": "../public/proyecto-wimander.jpeg", "alt": "wimander" },
+      "descripcion": "Crea planes de conexión y muestra advertencias sobre cliente que vayan a cumplir su plan asignado",
+      "tegnologias": [
+        { "alt": "HTML5", "src": "../public/html5.svg" },
+        { "alt": "CSS3", "src": "../public/css3.svg" },
+        { "alt": "Git", "src": "../public/git.svg" },
+        { "alt": "Figma", "src": "../public/figma.svg" },
+        { "alt": "React", "src": "../public/react.svg" },
+        { "alt": "Laravel", "src": "../public/laravel.svg" },
+        { "alt": "Mysql", "src": "../public/mysql.svg" }
+      ]
+    }
+  ]
+}

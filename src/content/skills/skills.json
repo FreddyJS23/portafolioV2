@@ -1,0 +1,58 @@
+{ 
+ "tegnologias":[
+  {
+    "skill": "HTML5",
+    "image": { "alt": "HTML5", "src": "../public/html5.svg" }
+  },
+  {
+    "skill": "CSS3",
+    "image": { "alt": "CSS3", "src": "../public/css3.svg" }
+  },
+  {
+    "skill": "Bootstrap",
+    "image": { "alt": "Bootstrap", "src": "../public/bootsrap.svg" }
+  },
+  {
+    "skill": "Tailwind",
+    "image": { "alt": "Tailwind", "src": "../public/tailwind.svg" }
+  },
+  {
+    "skill": "Figma",
+    "image": { "alt": "Figma", "src": "../public/figma.svg" }
+  },
+  {
+    "skill": "Git",
+    "image": { "alt": "Git", "src": "../public/git.svg" }
+  },
+  {
+    "skill": "JavaScript",
+    "image": { "alt": "JavaScript", "src": "../public/javascript.svg" }
+  },
+  {
+    "skill": "React",
+    "image": { "alt": "React", "src": "../public/react.svg" }
+  },
+  {
+    "skill": "NextJs",
+    "image": { "alt": "NextJs", "src": "../public/nextjs.svg" }
+  },
+  {
+    "skill": "Astro",
+    "image": { "alt": "Astro", "src": "../public/astro.svg" }
+  },
+  {
+    "skill": "PHP",
+    "image": { "alt": "PHP", "src": "../public/php.svg" }
+  },
+  {
+    "skill": "Mysql",
+    "image": { "alt": "Mysql", "src": "../public/mysql.svg" }
+  },
+  {
+    "skill": "Laravel",
+    "image": { "alt": "Laravel", "src": "../public/laravel.svg" }
+  }
+ ] 
+ 
+
+}
