@@ -1,0 +1,14 @@
+---
+interface Props {
+  name: string;
+  src: string;
+  alt: string;
+}
+
+const { name, alt, src } = Astro.props;
+---
+
+<div class="flex flex-col p-7 shadow-xl gap-4 align-cernter w-24 h-24">
+  <img src={src} alt={alt} class="w-10 hover:-rotate-180 transition-transform duration-100" />
+  <p class="font-bold">{name}</p>
+</div>
