@@ -8,6 +8,7 @@ import Skill from "../components/Skill.astro";
 import "../styles/index.css";
 import { getEntry } from "astro:content";
 import MenuResponsive from "../components/MenuResponsive.astro";
+import Titulos from "../components/Titulos.astro";
 
 const { data: dataSkills } = await getEntry("skills", "skills");
 const { tegnologias } = dataSkills;
@@ -25,30 +26,16 @@ const { proyectos } = dataProjects;
     <Nav />
     <MenuResponsive />
   </header>
-
-  <main class="flex flex-col gap-20 mt-8">
-    
-    <section class="flex flex-row gap-60 m-auto">
   <div class="divider before:bg-primary after:bg-primary m-auto w-3/4"></div>
+  <!---------------------------------- princiapl ------------------------------- -->
+  <main class="flex flex-col gap-20 mt-28">
+   <!-- ------------------------------ presentacion ------------------------------  -->
+    <section
+      id="presentation"
+      class="flex flex-col md:m-auto lg:m-2 lg:gap-48 lg:flex-row gap-24 animate-fade-down relative xl:m-2 xl:justify-center"
+    >
       <Presentation />
     </section>
-
-    <section class="flex flex-col gap-8 items-center">
-      <h2 class="text-2xl font-bold  font-PermanentMarker">Proyectos</h2>
-      <div class="flex gap-6">
-
-  
-    {
-        proyectos.map((proyecto) => (
-          <Project
-            proyecto={proyecto.proyecto}
-            imagen={proyecto.imagen}
-            descripcion={proyecto.descripcion}
-            tegnologias={proyecto.tegnologias}
-          />
-        ))
-      }
-        </div>
     </section>
 <section class="flex flex-col items-center m-auto gap-5  ">
   <h2 class="text-2xl font-bold  font-PermanentMarker">Sobre mi</h2>
