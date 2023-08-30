@@ -1,0 +1,17 @@
+---
+interface Props {
+  titulo: string;
+  className: string;
+}
+
+const { titulo, className } = Astro.props;
+---
+
+<div class="relative">
+  <span
+    class=`absolute ${className}  h-10 -left-5 -top-1 -z-10 bg-primary -skew-x-[30deg]`
+  ></span>
+  <h2 class="text-2xl text-white font-bold before: font-PermanentMarker">
+    {titulo}
+  </h2>
+</div>
