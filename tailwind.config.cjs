@@ -8,10 +8,13 @@ module.exports = {
 				Quicksand:['Quicksand','cursive'],
 				PermanentMarker:['PermanentMarker','cursive']
 			},
+		colors:{
+			'text-primary':'#93DEFF',
+			'text-secondary':'#3D5AF1'
 			
+		}
 		},
 	},
-	plugins: [require("daisyui")],
 	plugins: [require("daisyui"),require('tailwindcss-animated')],
 }
 
