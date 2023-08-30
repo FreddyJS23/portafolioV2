@@ -10,7 +10,7 @@
   },
   {
     "skill": "Bootstrap",
-    "image": { "alt": "Bootstrap", "src": "../public/bootsrap.svg" }
+    "image": { "alt": "Bootstrap", "src": "../public/bootstrap.svg" }
   },
   {
     "skill": "Tailwind",
