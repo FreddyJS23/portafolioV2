@@ -73,6 +73,32 @@ const { proyectos } = dataProjects;
       <Titulos titulo="Sobre mi" className="w-36" />
       <About />
     </section>
+<!--  ------------------------------- habilidades ------------------------------  -->
+    <section
+      id="skills"
+      class="flex flex-col gap-8 items-center md:m-auto animate-fade-down"
+    >
+      <Titulos titulo="Tegnologias" className="w-48" />
+
+      <div
+        class="flex w-full flex-col sm:flex-wrap sm:w-auto sm:flex-row sm:justify-center gap-8"
+      >
+        {
+          tegnologias.map((skill) => (
+            <Skill
+              name={skill.skill}
+              alt={skill.image.alt}
+              src={skill.image.src}
+            />
+          ))
+        }
+      </div>
+      <img
+        id="skillSvg"
+        class="self-end w-28 h-28 sm:self-start sm:-translate-y-20 2xl:-translate-y-0 2xl:-translate-x-24"
+        src="../../public/skills-dark.svg"
+        alt="generando skill"
+      />
     </section>
   </main>
 </Layout>
