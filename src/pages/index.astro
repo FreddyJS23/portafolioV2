@@ -5,8 +5,7 @@ import Presentation from "../components/Presentation.astro";
 import Project from "../components/Project.astro";
 import About from "../components/About.astro";
 import Skill from "../components/Skill.astro";
-import '../styles/index.css'
-
+import "../styles/index.css";
 import { getEntry } from "astro:content";
 
 const { data: dataSkills } = await getEntry("skills", "skills");
@@ -17,8 +16,8 @@ const { proyectos } = dataProjects;
 ---
 
 <Layout
-  titulo="Portatolfio"
-  descripcion="Portafolio con informacion relevante sobre mi"
+  titulo="Portafolio"
+  descripcion="Portafolio con información relevante sobre mi"
 >
   <header>
     <Nav />
