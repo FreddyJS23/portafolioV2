@@ -36,25 +36,40 @@ const { proyectos } = dataProjects;
     >
       <Presentation />
     </section>
+<!--  -------------------------------- proyectos -------------------------------  -->
+    <section
+      id="projects"
+      class="flex flex-col relative gap-8 items-center mt-20 md:mt-16 animate-fade-down lg:mt-28"
+    >
+      <Titulos titulo="Proyectos" className="w-40" />
+      <img
+        id="projectSvg"
+        class="absolute -top-4 ml-56 w-24 h-24 sm:w-28 sn:h-28 sm:ml-1 sm:right-44 sm:self-end sm:-top-6"
+        src="../public/projects-completed-dark.svg"
+        alt="proyectos"
+      />
+      <div
+        class="flex flex-col md:justify-center md:flex-row gap-8 m-auto md:gap-6 md:flex-wrap 2xl:gap-24"
+      >
+        {
+          proyectos.map((proyecto) => (
+            <Project
+              proyecto={proyecto.proyecto}
+              imagen={proyecto.imagen}
+              repositorio={proyecto.repositorio}
+              web={proyecto.web}
+              descripcion={proyecto.descripcion}
+              tegnologias={proyecto.tegnologias}
+            />
+          ))
+        }
+      </div>
     </section>
 <section class="flex flex-col items-center m-auto gap-5  ">
   <h2 class="text-2xl font-bold  font-PermanentMarker">Sobre mi</h2>
   <About />
 </section>
    
-    <section class="flex flex-col items-center m-auto">
-      <h2 class="text-2xl font-bold font-PermanentMarker">Tegnologias</h2>
-     <div class="flex justify-center flex-wrap">
-      {
-        tegnologias.map((skill) => (
-          <Skill
-            name={skill.skill}
-            alt={skill.image.alt}
-            src={skill.image.src}
-          />
-        ))
-      }
-     </div>
     </section>
   </main>
 </Layout>
