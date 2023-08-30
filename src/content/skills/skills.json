@@ -2,55 +2,55 @@
  "tegnologias":[
   {
     "skill": "HTML5",
-    "image": { "alt": "HTML5", "src": "../public/html5.svg" }
+    "image": { "alt": "HTML5", "src": "../public/assets/html5.svg" }
   },
   {
     "skill": "CSS3",
-    "image": { "alt": "CSS3", "src": "../public/css3.svg" }
+    "image": { "alt": "CSS3", "src": "../public/assets/css3.svg" }
   },
   {
     "skill": "Bootstrap",
-    "image": { "alt": "Bootstrap", "src": "../public/bootstrap.svg" }
+    "image": { "alt": "Bootstrap", "src": "../public/assets/bootstrap.svg" }
   },
   {
     "skill": "Tailwind",
-    "image": { "alt": "Tailwind", "src": "../public/tailwind.svg" }
+    "image": { "alt": "Tailwind", "src": "../public/assets/tailwind.svg" }
   },
   {
     "skill": "Figma",
-    "image": { "alt": "Figma", "src": "../public/figma.svg" }
+    "image": { "alt": "Figma", "src": "../public/assets/figma.svg" }
   },
   {
     "skill": "Git",
-    "image": { "alt": "Git", "src": "../public/git.svg" }
+    "image": { "alt": "Git", "src": "../public/assets/git.svg" }
   },
   {
     "skill": "JavaScript",
-    "image": { "alt": "JavaScript", "src": "../public/javascript.svg" }
+    "image": { "alt": "JavaScript", "src": "../public/assets/javascript.svg" }
   },
   {
     "skill": "React",
-    "image": { "alt": "React", "src": "../public/react.svg" }
+    "image": { "alt": "React", "src": "../public/assets/react.svg" }
   },
   {
     "skill": "NextJs",
-    "image": { "alt": "NextJs", "src": "../public/nextjs.svg" }
+    "image": { "alt": "NextJs", "src": "../public/assets/nextjs.svg" }
   },
   {
     "skill": "Astro",
-    "image": { "alt": "Astro", "src": "../public/astro.svg" }
+    "image": { "alt": "Astro", "src": "../public/assets/astro.svg" }
   },
   {
     "skill": "PHP",
-    "image": { "alt": "PHP", "src": "../public/php.svg" }
+    "image": { "alt": "PHP", "src": "../public/assets/php.svg" }
   },
   {
     "skill": "Mysql",
-    "image": { "alt": "Mysql", "src": "../public/mysql.svg" }
+    "image": { "alt": "Mysql", "src": "../public/assets/mysql.svg" }
   },
   {
     "skill": "Laravel",
-    "image": { "alt": "Laravel", "src": "../public/laravel.svg" }
+    "image": { "alt": "Laravel", "src": "../public/assets/laravel.svg" }
   }
  ] 
  
