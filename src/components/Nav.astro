@@ -1,27 +1,76 @@
 ---
-
+import { LogoSvg } from "../assets/svg";
+import Linkedin from "./svg/Linkedin.astro";
+import Github from "./svg/Github.astro";
+import Soon from "./svg/Soon.astro";
+import Moon from "./svg/Moon.astro";
 ---
-<nav class="navbar">
-	
-	  <a class="navbar-start" href="#"
-		><img src="../public/" class="logo" alt="logo"
-	  /></a>
-	 
-		<ul class="navbar-end flex flex-row m-r-5 gap-4">
-		  <li class="no-underline">
-			<a class="text-base no-underline" href="#sobreMi">Sobre mi</a>
-		  </li>
-		  <li class="no-underline">
-			<a class="text-base no-underline" href="#habilidades">Habilidades</a>
-		  </li>
 
-		  <li class="no-underline">
-			<a class="text-base no-underline" href="#proyectos">Proyectos</a>
-		  </li>
-		  <li class="no-underline">
-			<a class="text-base no-underline" href="#contacto">Contacto</a>
-		  </li>
-		</ul>
-	 
-	</div>
-  </nav>
+<nav class="navbar">
+  <div class="navbar-end md:navbar-start md:justify-center">
+    <LogoSvg client:only />
+  </div>
+
+  <div class="navbar-end justify-center gap-4 sm:gap-8">
+   <a href="https://ve.linkedin.com/in/freddy-solarte-b86175180" target="_blank" rel="noopener noreferrer"> <Linkedin /></a>
+    <a href="https://github.com/FreddyJS23" target="_blank" rel="noopener noreferrer"><Github /></a>
+
+    <label class="swap swap-rotate">
+      <!-- this hidden checkbox controls the state -->
+      <input id="darkMode" type="checkbox" />
+
+      <Soon />
+
+      <Moon />
+    </label>
+  </div>
+</nav>
+
+<script>
+  
+  const checkedDarkMode = document.getElementById(
+    "darkMode"
+  ) as HTMLInputElement;
+ 
+  const html = document.getElementsByTagName("html")[0];
+
+  const presentationSvg = document.getElementById("presentationSvg");
+  const projectSvg = document.getElementById("projectSvg");
+  const skillSvg = document.getElementById("skillSvg");
+
+  const storage = window.localStorage;
+
+  const applyDarkMode = () => {
+    localStorage.setItem("darkMode", "true");
+    checkedDarkMode.checked = false;
+    presentationSvg?.setAttribute("src", "../public/presentation-dark.svg");
+    projectSvg?.setAttribute("src", "../public/projects-completed-dark.svg");
+    skillSvg?.setAttribute("src", "../public/skills-dark.svg");
+  };
+
+  const applyLightMode = () => {
+    localStorage.setItem("darkMode", "false");
+    checkedDarkMode.checked = true;
+    presentationSvg?.setAttribute("src", "../public/presentation.svg");
+    projectSvg?.setAttribute("src", "../public/projects-completed.svg");
+    skillSvg?.setAttribute("src", "../public/skills.svg");
+  };
+
+  checkedDarkMode?.addEventListener("click", () => {
+    //cambio de iconos dark
+    if (html.classList.contains("dark")) {
+      applyLightMode();
+    } else {
+      applyDarkMode();
+    }
+
+    html.classList.toggle("dark");
+  });
+
+  if (storage.getItem("darkMode") == "false") {
+    html.classList.remove("dark");
+    applyLightMode();
+  } else {
+    applyDarkMode();
+  }
+</script>
