@@ -2,8 +2,10 @@
   "proyectos": [
     {
       "proyecto": "Aplicación web para una escuela",
+      "repositorio": "https://github.com/FreddyJS23/Proyecto-Escuela-Pascual-Ignacio-Villasmil",
+      "web": "https://developing-cradle.000webhostapp.com/",
       "imagen": {
-        "src": "../public/proyecto-escuela.jpeg",
+        "src": "escuela",
         "alt": "proyecto escuela"
       },
       "descripcion": "Permite control de registro de los estudiante, profesores y representantes y generación de constancias en pdf",
@@ -18,8 +20,10 @@
     },
     {
       "proyecto": "Aplicación web para consultar películas y series",
+      "repositorio": "https://github.com/FreddyJS23/Catalogo-Peliculas-Series-Nextjs13",
+      "web": "https://catalago-peliculas-series-nextjs13.vercel.app/",
       "imagen": {
-        "src": "../public/proyecto-catalogo-peliculas.jpg",
+        "src": "catalogo",
         "alt": "catalogo de peliculas"
       },
       "descripcion": "Filtra por genero o puede escribir su película o serie favorita",
@@ -33,7 +37,9 @@
     },
     {
       "proyecto": "Aplicación web para administrar clientes en una red Wifi",
-      "imagen": { "src": "../public/proyecto-wimander.jpeg", "alt": "wimander" },
+      "repositorio": "https://github.com/FreddyJS23/Wimander",
+      "web": "https://freddyjs23.github.io/Wimander/",
+      "imagen": { "src": "wimander", "alt": "wimander" },
       "descripcion": "Crea planes de conexión y muestra advertencias sobre cliente que vayan a cumplir su plan asignado",
       "tegnologias": [
         { "alt": "HTML5", "src": "../public/html5.svg" },
