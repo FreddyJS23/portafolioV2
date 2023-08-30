@@ -12,10 +12,11 @@ export const TypewriterComponent = () => {
         if (grados[i]['id_grado'] == seccionesActivas[j]['id_grado'])<br>
           gradoConSeccionActiva = true;<br>
       }<br>
-      if (!gradoConSeccionActiva) gradoConSeccionesInactiva.push(grados[i]);<br>
+      if (!gradoConSeccionActiva) 
+      gradoConSeccionesInactiva.push(grados[i]);
     }<br>
     let html = ' &lt; option value=""&gt; &lt;/option&gt;'<br>
-    gradoConSeccionesInactiva.forEach(gradoConSeccionesInactiva => {<br><br>
+    gradoConSeccionesInactiva.<br>forEach(gradoConSeccionesInactiva => {<br><br>
     
     html += '&lt; option value="&lt;/option&gt;'<br>
       gradoConSeccionInactiva.innerHTML = html<br>
@@ -30,7 +31,8 @@ export const TypewriterComponent = () => {
         autoStart: true,
         loop: true,
         delay: 30,
-        wrapperClassName: "absolute",
+        wrapperClassName: "absolute text-secondary/90 ", 
+        
       }}
     />
   );
