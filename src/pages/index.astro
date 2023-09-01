@@ -32,7 +32,7 @@ const { proyectos } = dataProjects;
     <!-- ------------------------------ presentacion ------------------------------  -->
     <section
       id="presentation"
-      class="opacity-0 flex flex-col md:m-auto lg:m-2 lg:gap-48 lg:flex-row gap-24 relative xl:m-2 xl:justify-center"
+      class="opacity-0 flex flex-col md:m-auto lg:gap-48 lg:flex-row gap-24 relative xl:m-2 xl:justify-center"
     >
       <Presentation />
     </section>
@@ -44,7 +44,7 @@ const { proyectos } = dataProjects;
       <Titulos titulo="Proyectos" className="w-40" />
       <img
         id="projectSvg"
-        class="absolute top-[9px] ml-60 w-16 h-16 sm:w-28 sn:h-28 sm:ml-1 sm:right-44 sm:self-end sm:-top-6"
+        class="absolute top-[9px] ml-60 w-16 h-16 sm:w-28 sm:h-28 sm:ml-1 sm:right-44 sm:self-end sm:-top-8 2xl:right-1/4"
         src="../public/assets/projects-completed-dark.svg"
         alt="proyectos"
         loading="lazy"
@@ -79,10 +79,10 @@ const { proyectos } = dataProjects;
       id="skills"
       class="opacity-0 flex flex-col gap-8 items-center md:m-auto"
     >
-      <Titulos titulo="Tegnologias" className="w-48" />
+      <Titulos titulo="Tegnologias" className="w-48" />                                                                                        
 
       <div
-        class="flex w-full flex-col sm:flex-wrap sm:w-auto sm:flex-row sm:justify-center gap-8"
+        class="flex w-full flex-col sm:flex-wrap sm:w-auto sm:flex-row sm:justify-center gap-8 "
       >
         {
           tegnologias.map((skill) => (
@@ -96,7 +96,7 @@ const { proyectos } = dataProjects;
       </div>
       <img
         id="skillSvg"
-        class="self-end w-28 h-28 sm:self-start sm:-translate-y-20 2xl:-translate-y-0 2xl:-translate-x-24"
+        class="self-end w-28 h-28 relative sm:self-start xl:-top-44 2xl:-top-4  "
         src="../../public/assets/skills-dark.svg"
         alt="generando skill"
         loading="lazy"
