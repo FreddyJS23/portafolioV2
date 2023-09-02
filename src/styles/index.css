@@ -4,17 +4,17 @@
 
 @font-face {
     font-family: 'Quicksand';
-    src: url(font/Quicksand-Regular.ttf);
+    src: url(/fonts/Quicksand-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Quicksand-Bold';
-    src: url(font/Quicksand-Bold.ttf);
+    src: url(/fonts/Quicksand-Bold.ttf);
 }
 
 @font-face {
     font-family: 'PermanentMarker';
-    src: url(font/PermanentMarker-Regular.ttf);
+    src: url(/fonts/PermanentMarker-Regular.ttf);
 }
 
 @layer base{

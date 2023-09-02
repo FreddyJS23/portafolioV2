@@ -10,12 +10,12 @@
       },
       "descripcion": "Permite control de registro de los estudiante, profesores y representantes y generación de constancias en pdf",
       "tegnologias": [
-        { "alt": "HTML5", "src": "../public/assets/html5.svg" },
-        { "alt": "CSS3", "src": "../public/assets/css3.svg" },
-        { "alt": "Git", "src": "../public/assets/git.svg" },
-        { "alt": "JavaScript", "src": "../public/assets/javascript.svg" },
-        { "alt": "PHP", "src": "../public/assets/php.svg" },
-        { "alt": "Mysql", "src": "../public/assets/mysql.svg" }
+        { "alt": "HTML5", "src": "/assets/html5.svg" },
+        { "alt": "CSS3", "src": "/assets/css3.svg" },
+        { "alt": "Git", "src": "/assets/git.svg" },
+        { "alt": "JavaScript", "src": "/assets/javascript.svg" },
+        { "alt": "PHP", "src": "/assets/php.svg" },
+        { "alt": "Mysql", "src": "/assets/mysql.svg" }
       ]
     },
     {
@@ -28,11 +28,11 @@
       },
       "descripcion": "Filtra por genero o puede escribir su película o serie favorita",
       "tegnologias": [
-        { "alt": "HTML5", "src": "../public/assets/html5.svg" },
-        { "alt": "CSS3", "src": "../public/assets/css3.svg" },
-        { "alt": "Git", "src": "../public/assets/git.svg" },
-        { "alt": "NextJs", "src": "../public/assets/nextjs.svg" },
-        { "alt": "Figma", "src": "../public/assets/figma.svg" }
+        { "alt": "HTML5", "src": "/assets/html5.svg" },
+        { "alt": "CSS3", "src": "/assets/css3.svg" },
+        { "alt": "Git", "src": "/assets/git.svg" },
+        { "alt": "NextJs", "src": "/assets/nextjs.svg" },
+        { "alt": "Figma", "src": "/assets/figma.svg" }
       ]
     },
     {
@@ -42,13 +42,13 @@
       "imagen": { "src": "wimander", "alt": "wimander" },
       "descripcion": "Crea planes de conexión y muestra advertencias sobre cliente que vayan a cumplir su plan asignado",
       "tegnologias": [
-        { "alt": "HTML5", "src": "../public/assets/html5.svg" },
-        { "alt": "CSS3", "src": "../public/assets/css3.svg" },
-        { "alt": "Git", "src": "../public/assets/git.svg" },
-        { "alt": "Figma", "src": "../public/assets/figma.svg" },
-        { "alt": "React", "src": "../public/assets/react.svg" },
-        { "alt": "Laravel", "src": "../public/assets/laravel.svg" },
-        { "alt": "Mysql", "src": "../public/assets/mysql.svg" }
+        { "alt": "HTML5", "src": "/assets/html5.svg" },
+        { "alt": "CSS3", "src": "/assets/css3.svg" },
+        { "alt": "Git", "src": "/assets/git.svg" },
+        { "alt": "Figma", "src": "/assets/figma.svg" },
+        { "alt": "React", "src": "/assets/react.svg" },
+        { "alt": "Laravel", "src": "/assets/laravel.svg" },
+        { "alt": "Mysql", "src": "/assets/mysql.svg" }
       ]
     }
   ]
