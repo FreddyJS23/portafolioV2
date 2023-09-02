@@ -43,17 +43,17 @@ import Moon from "./svg/Moon.astro";
   const applyDarkMode = () => {
     localStorage.setItem("darkMode", "true");
     checkedDarkMode.checked = false;
-    presentationSvg?.setAttribute("src", "/assets/presentation-dark.svg");
-    projectSvg?.setAttribute("src", "/assets/projects-completed-dark.svg");
-    skillSvg?.setAttribute("src", "/assets/skills-dark.svg");
+    presentationSvg?.setAttribute("src", `${import.meta.env.BASE_URL}assets/presentation-dark.svg`);
+    projectSvg?.setAttribute("src", `${import.meta.env.BASE_URL}assets/projects-completed-dark.svg`);
+    skillSvg?.setAttribute("src", `${import.meta.env.BASE_URL}assets/skills-dark.svg`);
   };
 
   const applyLightMode = () => {
     localStorage.setItem("darkMode", "false");
     checkedDarkMode.checked = true;
-    presentationSvg?.setAttribute("src", "/assets/presentation.svg");
-    projectSvg?.setAttribute("src", "/assets/projects-completed.svg");
-    skillSvg?.setAttribute("src", "/assets/skills.svg");
+    presentationSvg?.setAttribute("src", `${import.meta.env.BASE_URL}assets/presentation.svg`);
+    projectSvg?.setAttribute("src", `${import.meta.env.BASE_URL}assets/projects-completed.svg`);
+    skillSvg?.setAttribute("src", `${import.meta.env.BASE_URL}assets/skills.svg`);
   };
 
   checkedDarkMode?.addEventListener("click", () => {

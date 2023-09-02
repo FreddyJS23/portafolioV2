@@ -56,13 +56,13 @@ const { proyecto, descripcion, repositorio, web, imagen, tegnologias } =
       <a class="" target="_blank" href={repositorio}>
         <img
           class="w-10 b"
-          src="/assets/github-white.svg"
+          src=`${import.meta.env.BASE_URL}assets/github-white.svg`
           alt="icono github"
           loading="lazy"
         /></a
       >
       <a class="" target="_blank" href={web}
-        ><img class="w-10" src="/assets/url.svg" alt="icono enlace" /></a
+        ><img class="w-10" src=`${import.meta.env.BASE_URL}assets/url.svg` alt="icono enlace" /></a
       >
     </div>
   </figure>
@@ -79,7 +79,7 @@ const { proyecto, descripcion, repositorio, web, imagen, tegnologias } =
       <div class="card-actions">
         {
           tegnologias.map((tegnologia) => (
-            <img src={tegnologia.src} alt={tegnologia.alt} />
+            <img src={import.meta.env.BASE_URL + tegnologia.src} alt={tegnologia.alt} />
           ))
         }
       </div>

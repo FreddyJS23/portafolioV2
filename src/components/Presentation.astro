@@ -14,7 +14,7 @@ import FondoFotoSvg from "./svg/FondoFotoSvg.astro";
   >
     <img
       id="presentationSvg"
-      src="/assets/presentation-dark.svg"
+      src=`${import.meta.env.BASE_URL}assets/presentation-dark.svg`
       alt="ilustracion"
       class="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32"
     />
@@ -31,7 +31,7 @@ import FondoFotoSvg from "./svg/FondoFotoSvg.astro";
     >
       <img
         class="h-8 transition-transform duration-300 hover:scale-125"
-        src="/assets/whatsapp.svg"
+        src=`${import.meta.env.BASE_URL}assets/whatsapp.svg`
         alt="whatsapp"
       />
     </a>
