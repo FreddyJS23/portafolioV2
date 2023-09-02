@@ -3,7 +3,7 @@ name: GitHub Pages Astro CI
 on:
   # Activa el workflow cada vez que hay un push a la rama `main`
   push:
-    branches: [ main ]
+    branches: [ master ]
   # Te permite ejecutar este workflow manualmente desde la pestaña Actions en GitHub.
   workflow_dispatch:
 
