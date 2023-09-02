@@ -4,6 +4,7 @@ import foto from "../assets/foto.jpeg";
 import { Image } from "astro:assets";
 import FondoFotoSvg from "./svg/FondoFotoSvg.astro";
 ---
+
 <!--  ---------------------------- seccion izquierda --------------------------- -->
 <div
   class="self-start flex flex-col relative rounded-md dark:bg-slate-800/95 bg-blue-50 shadow-md shadow-secondary max-w-sm m-auto sm:max-w-lg md:max-w-xl md:m-2 p-4 md:p-8 gap-3 lg:max-w-xl xl:max-w-2xl"
@@ -24,11 +25,16 @@ import FondoFotoSvg from "./svg/FondoFotoSvg.astro";
     >
       Freddy Solarte
     </h2>
-    <img
-      class="h-8 transition-transform duration-100 hover:scale-125"
-      src="../public/assets/whatsapp.svg"
-      alt="whatsapp"
-    />
+    <a
+      href="https://wa.me/584247462023?text=Hola%20Freddy%20estoy%20interesado%20en%20tus%20servicios"
+      target="_blank"
+    >
+      <img
+        class="h-8 transition-transform duration-300 hover:scale-125"
+        src="/assets/whatsapp.svg"
+        alt="whatsapp"
+      />
+    </a>
   </div>
   <p class="font-bold text-lg dark:text-slate-300">Full stack developer</p>
   <div class="flex flex-col">
@@ -41,8 +47,12 @@ import FondoFotoSvg from "./svg/FondoFotoSvg.astro";
 </div>
 
 <!--  ----------------------------- seccion derecha ----------------------------  -->
-<div class="self-center flex justify-center relative container w-40 h-96 lg:-left-8 xl:-left-1">
-  <div class="absolute top-12 w-48 h-48  z-10 lg:w-60 lg:h-60 lg:-left-20 xl:-left-1">
+<div
+  class="self-center flex justify-center relative container w-40 h-96 lg:-left-8 xl:-left-1"
+>
+  <div
+    class="absolute top-12 w-48 h-48 z-10 lg:w-60 lg:h-60 lg:-left-20 xl:-left-1"
+  >
     <FondoFotoSvg />
     <Image
       src={foto}
