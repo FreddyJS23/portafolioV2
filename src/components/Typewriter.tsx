@@ -31,7 +31,7 @@ export const TypewriterComponent = () => {
         autoStart: true,
         loop: true,
         delay: 30,
-        wrapperClassName: "absolute text-secondary/90 ", 
+        wrapperClassName: "absolute text-secondary/90 select-none", 
         
       }}
     />
