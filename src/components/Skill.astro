@@ -9,7 +9,7 @@ const { name, alt, src } = Astro.props;
 ---
 
 <div
-  class="flex group bg-blue-50 gap-6 p-2 dark:bg-slate-800/95 items-center shadow-md shadow-primary last:rotate-3 sm:last:rotate-0 sm:justify-center sm:p-7 sm:shadow-lg sm:shadow-secondary sm:flex-col sm:gap-4 sm:w-28 sm:h-32 rounded-lg xl:first:-rotate-6"
+  class="card-style select-none flex group gap-6 p-2 items-center last:rotate-3 sm:last:rotate-0 sm:justify-center sm:p-7 sm:shadow-lg sm:shadow-secondary sm:flex-col sm:gap-4 sm:w-28 sm:h-32 rounded-lg xl:first:-rotate-6"
 >
   <img src={import.meta.env.BASE_URL + src} alt={alt} class="w-10 group-hover:animate-wiggle-more" loading="lazy"/>
   <p class="font-extrabold dark:text-slate-300">{name}</p>
