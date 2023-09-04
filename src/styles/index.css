@@ -25,7 +25,7 @@
 
 @layer components{
     .card-style{
-       @apply bg-blue-50 dark:bg-slate-800/90 shadow-md shadow-secondary
+       @apply bg-blue-50 dark:bg-slate-800/90 shadow-md shadow-primary dark:shadow-secondary
     }
     .scale-icon{
         @apply transition-transform duration-200 hover:scale-150 sm:hover:scale-125
