@@ -50,4 +50,17 @@ import ArrowRight from "./svg/Arrow-right.astro";
 
 </ul>
 
+    id="menuNavigate"
+    class="group/menu menu menu-xs bg-secondary/30 opacity-60 rounded-box fixed top-1/3 -left-12 transition-all duration-200 sm:hover:left-0 sm:hover:opacity-100 sm:-left-16 z-10 sm:menu-sm sm:gap-4 lg:menu-md"
 </nav>
+<script>
+  let menu = document.getElementById("menuNavigate");
+
+  const handleScroll = () => {
+    menu?.classList.replace("-left-12", "left-0");
+    setTimeout(() =>  menu?.classList.replace("left-0", "-left-12"), 2000);
+  };
+ 
+  window.addEventListener("scroll", handleScroll);
+  
+  window.outerWidth >= 640 &&
